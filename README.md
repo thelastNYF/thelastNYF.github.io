@@ -1,2 +1,1 @@
-# thelastNYF.github.io
-thelastNYF.github.io
+# thelastnyf.github.io

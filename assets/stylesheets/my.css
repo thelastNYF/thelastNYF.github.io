@@ -1,0 +1,218 @@
+
+
+/*!* 清除照片的浮动 *!*/
+/*.clear-float {*/
+/*    clear: both;*/
+/*}*/
+
+/*!* 创建一个 flex 容器，使图片和文本在同一行排列 *!*/
+/*.flex-container {*/
+/*    display: flex;*/
+/*    align-items: center; !* 垂直居中对齐 *!*/
+/*}*/
+
+/*!* 创建表格来包含图片和文本 *!*/
+/*table {*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* 设置文本的样式 *!*/
+/*.text-content {*/
+/*    vertical-align: middle; !* 垂直居中对齐 *!*/
+/*    padding: 20px; !* 添加一些内边距以与图片分开 *!*/
+/*    font-size: larger;*/
+/*    text-size-adjust: auto; !* 文本字号自适应 *!*/
+/*}*/
+
+/*!* 使用媒体查询在较小屏幕上修改布局 *!*/
+/*@media screen and (max-width: 600px) {*/
+/*    table {*/
+/*        display: block; !* 将表格显示为块元素 *!*/
+/*    }*/
+/*    td {*/
+/*        display: block; !* 将单元格显示为块元素 *!*/
+/*    }*/
+/*}*/
+
+/*#date {*/
+/*    white-space: nowrap;*/
+/*    text-align: left;*/
+/*}*/
+
+
+h1 {
+       font-family: 'Roboto', sans-serif;
+       font-weight: 700; /* 注意选择与引入字体匹配的font-weight */
+       color: #333; /* 可根据需要调整颜色 */
+}
+
+.bio-section {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-image {
+    max-height: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.bio-info {
+    flex: 1;
+}
+
+.bio-info p {
+    margin: 10px 0;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.news-section {
+    margin: 20px 0;
+    padding: 11px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.75rem;
+}
+
+.news-card:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #007BFF;
+    margin-right: 15px;
+    min-width: 80px;
+}
+
+.news-card p {
+    margin: 0;
+    flex: 1;
+}
+
+
+
+
+
+
+
+.publications-section {
+    margin: 20px 0;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+.publication-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.publication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.publication-card p {
+    margin: 8px 0;
+}
+
+.conference-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+.conference-badge-oral {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #f0f0f0;
+    color: #c92a07;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .bio-section {
+        flex-direction: column;
+        align-items: center; /* 将所有内容居中 */
+        text-align: left;
+    }
+
+    .bio-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .news-card,
+    .publication-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-date {
+        margin-bottom: 5px;
+    }
+}

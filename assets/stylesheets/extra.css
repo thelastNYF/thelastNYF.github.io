@@ -1,0 +1,16 @@
+.github{
+    transform: scale(1);
+}
+
+.google{
+    transform: scale(0.8);
+}
+
+.google-scholar{
+    transform: scale(1);
+}
+
+.md-grid {
+    max-width: 75%;
+  }
+  
